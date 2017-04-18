@@ -1,0 +1,60 @@
+body {
+  background-color: $white_color;
+  margin: 0;
+  padding: 50px 60px;
+}
+h2 {
+  color: $title_color;
+  font: 100 18px $font_stack;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  color: $link_color;
+  font: 400 50px $font_stack;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0;
+}
+p {
+  color: #333;
+  font: 100 16px $font_stack;
+  text-align: center;
+  margin: 0;
+}
+.actions {
+  text-align: center;
+  margin-top: 30px;
+  a {
+    background-color: $button_color;
+    border-radius: 3px;
+    color: $link_color;
+    font: 300 16px $font_stack;
+    text-align: center;
+    padding: 12px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+#gameboard {
+  position: relative;
+  text-align: center;
+  top: 30px;
+  .card {
+    border: 2px solid $button_color;
+    display: inline-block;
+    height: 200px;
+    width: 215px;
+    margin-top: 4px;
+    text-align: center;
+    &:hover {
+      background-color: $link_color;
+    }
+    img {
+      padding-top: 40px;
+    }
+  }
+}
